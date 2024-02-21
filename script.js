@@ -35,15 +35,15 @@ cityMumbaiEl.addEventListener("change", function(event){
 submitBtnEl.addEventListener("click", function(){
    if(citySelected === "Delhi"){
        resultMsgEl.textContent = "Correct Answer!";
-       resultMsgEl.classList.add("text-success");
+       resultMsgEl.style.color = "green"
    }
    else if(citySelected === ""){
        resultMsgEl.textContent = "Please select the Answer!";
-       resultMsgEl.classList.add("text-danger");
+       resultMsgEl.style.color = "red"
    }
    else{
        resultMsgEl.textContent = "Wrong Answer!";
-       resultMsgEl.classList.add("text-danger");
+       resultMsgEl.style.color = "red"
    }
    
 });
